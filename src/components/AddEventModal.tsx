@@ -20,7 +20,6 @@ export const AddEventModal = ({chosenDay, setOpen, open}: {
 }) => {
     const {
         debouncedHandleChange,
-        setTime,
         setEventName,
         onTimePickerChange,
         eventName,

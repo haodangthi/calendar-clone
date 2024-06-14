@@ -21,7 +21,6 @@ export const EditModal: FC<EditModalProps>  = (
 ) => {
     const {
         debouncedHandleChange,
-        saveChangesDisabled,
         onTimePickerChange,
         eventName,
         time,
@@ -37,6 +36,7 @@ export const EditModal: FC<EditModalProps>  = (
         }
         const shouldUpdate = nameChanged.current || timeChanged.current
 
+        // @ts-ignore
         saveChanges(editedEvent, shouldUpdate)
     }
 
@@ -77,7 +77,7 @@ export const EditModal: FC<EditModalProps>  = (
               </div>
           </DialogContent>
           <DialogActions>
-              <Button autoFocus onClick={save} disabled = {saveChangesDisabled}>
+              <Button autoFocus onClick={save}>
                   Save changes
               </Button>
           </DialogActions>

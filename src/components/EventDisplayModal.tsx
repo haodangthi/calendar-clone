@@ -15,11 +15,11 @@ interface EventDisplayModalProps {
     event: IEvent;
     close: () => void;
 }
-export const EventDisplayModal= ({
-                                     event,
+export const EventDisplayModal: FC<EventDisplayModalProps> = ({
                                      switchToEdit,
+                                     event,
                                      close
-}: FC<EventDisplayModalProps>) => {
+}) => {
     const { dispatchEvents } = useEventsContext()
     const displayedTime = DateTime.fromISO(event.time).toLocaleString(DateTime.TIME_SIMPLE)
     const deleteEvent = () => {

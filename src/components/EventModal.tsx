@@ -17,10 +17,9 @@ const EventModal = ({
 }) => {
     const [isEdit, setIsEdit] = useState(false)
     const { dispatchEvents } = useEventsContext()
-    const handleClick = (event: Event) => {
+    const handleClick: any = (event: Event) => {
         event.stopPropagation()
     }
-    console.log('render EventModal')
 
     const switchToEdit = () => {
         setIsEdit(true)

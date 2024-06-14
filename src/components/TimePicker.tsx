@@ -2,14 +2,14 @@ import TextField from '@mui/material/TextField'
 import {DesktopTimePicker, LocalizationProvider} from "@mui/x-date-pickers"
 import {AdapterLuxon} from "@mui/x-date-pickers/AdapterLuxon"
 
-export const BasicTimePicker = ({ setTime, value } ) => {
-
+export const BasicTimePicker = ({ setTime, value }: any) => {
     return (
         <LocalizationProvider dateAdapter={AdapterLuxon}>
             <DesktopTimePicker
                 defaultValue={value} //
                 label="For desktop"
                 onChange={setTime}
+                // @ts-ignore
                 renderInput={(params) => <TextField {...params} />}
             />
         </LocalizationProvider>

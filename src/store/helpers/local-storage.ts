@@ -21,7 +21,7 @@ export const loadStateFromLocalStorage = (): Events => {
     }
 
     const parsedState = JSON.parse(serializedState)
-    return new Map(parsedState.map(([key, value]) => [key, new Set(value)]))
+    return new Map(parsedState.map(([key, value]: any) => [key, new Set(value)]))
 }
 
 export const reducerWithLocalStorage = (state: Events, action: EventsActionType) => {

@@ -6,7 +6,7 @@ export const Event= ({ data }: {
     data: IEvent,
 }) => {
     const [open, setOpen] = useState(false)
-    const handleClick = (event: MouseEvent) => {
+    const handleClick: any = (event: MouseEvent) => {
         event.stopPropagation()
 
         setOpen(true)

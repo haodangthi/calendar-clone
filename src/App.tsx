@@ -3,7 +3,7 @@ import './App.css'
 import {DateTime} from "luxon"
 import Button from '@mui/material/Button'
 import {AddEventModal} from "./components/AddEventModal.tsx"
-import {IDay, IEvent} from "./types"
+import {IDay} from "./types"
 import { EventsContextProvider } from "./context/EventContext.tsx"
 
 
