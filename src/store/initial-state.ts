@@ -1,3 +1,3 @@
-import {Events, IEvent} from "../types";
+import { Events, IEvent } from "../types";
 
-export const initialState: Events = new Map<string, Set<IEvent>>()
+export const initialState: Events = new Map<string, Set<IEvent>>();

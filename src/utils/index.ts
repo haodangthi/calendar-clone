@@ -1,1 +1,1 @@
-export * from './sortTimeUTC.ts'
+export * from "./sortTimeUTC.ts";

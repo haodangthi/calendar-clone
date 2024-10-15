@@ -1,3 +1,3 @@
-import {IEvent} from "./event.ts"
+import { IEvent } from "./event.ts";
 
-export type Events = Map<string, Set<IEvent>>
+export type Events = Map<string, Set<IEvent>>;

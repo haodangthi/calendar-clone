@@ -1,6 +1,6 @@
-import {DateTime} from "luxon"
+import { DateTime } from "luxon";
 
 export interface IDay {
-    data: DateTime,
-    dayId: string
+  data: DateTime;
+  dayId: string;
 }
