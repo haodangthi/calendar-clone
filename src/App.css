@@ -9,41 +9,41 @@
 }
 
 .calendar-day {
-  border-left: 1px solid rgb(218, 220, 224);
-  border-bottom: 1px solid rgb(218, 220, 224);
+  border-bottom: 1px solid rgb(218 220 224);
   border-collapse: collapse;
+  border-left: 1px solid rgb(218 220 224);
 }
 
 .calendar {
-  margin: 0 0 0 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   height: calc(100vh - 50px - 22px);
+  margin: 0 0 0 20px;
 }
 
 .weekdays {
-  margin: 0 0 0 20px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   height: 20px;
+  margin: 0 0 0 20px;
 }
 
 .weekday {
-  border-left: 1px solid rgb(218, 220, 224);
-  border-bottom: 1px solid rgb(218, 220, 224);
+  border-bottom: 1px solid rgb(218 220 224);
   border-collapse: collapse;
-  text-align: center;
+  border-left: 1px solid rgb(218 220 224);
   height: 22px;
+  text-align: center;
 }
 
 .event {
-  background: rgb(177, 177, 244);
+  background: rgb(177 177 244);
+  border-radius: 2px;
   color: white;
-  width: 80%;
   line-height: 1;
   margin-bottom: 2px;
-  border-radius: 2px;
+  width: 80%;
 }
 
 .add-event-dialog__content {
@@ -56,26 +56,26 @@
 }
 
 .next-enter {
-  transform: translateX(100%);
   opacity: 0;
+  transform: translateX(100%);
 }
 
 .next-enter-active {
-  transform: translateX(0);
   opacity: 1;
+  transform: translateX(0);
   transition:
     transform 0.5s ease-in-out,
     opacity 0.5s ease-in-out;
 }
 
 .prev-enter {
-  transform: translateX(-100%);
   opacity: 0;
+  transform: translateX(-100%);
 }
 
 .prev-enter-active {
-  transform: translateX(0);
   opacity: 1;
+  transform: translateX(0);
   transition:
     transform 0.5s ease-in-out,
     opacity 0.5s ease-in-out;
